@@ -12,12 +12,10 @@ const PhotoItem = styled.div`
 const PhotoSet = styled.div`
 line-height: 0;
 ${PhotoItem} {
-  @media (min-width: 992px) {
-    width: ${({ measuredWidth }) => measuredWidth / 7}px;
-    height: ${({ measuredWidth }) => measuredWidth / 7}px;
-    &:nth-child(n+21) {
-      display: none;
-    }
+  width: ${({ measuredWidth }) => measuredWidth / 7}px;
+  height: ${({ measuredWidth }) => measuredWidth / 7}px;
+  &:nth-child(n+21) {
+    display: none;
   }
   @media (max-width: 991px) {
     width: ${({ measuredWidth }) => measuredWidth / 5}px;
